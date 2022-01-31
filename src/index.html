@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title": "Главная"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+        <main class="main">
+            <div class="preview">
+                <div class="preview__container">
+                    <div class="preview__text">
+                        <h1>Высоко-качественная веб-студия создающая крутые сайты на новейших технологиях и фреймворках.
+                        </h1>
+                        <h2>Нам доверяют крупные компании, государства и многие заказчики и вы также можете убедиться в
+                            качестве наших работ.
+                        </h2>
+                        <div class="preview__buttons">
+                            <button class="button button_large">Заказать</button>
+                            <button class="button button_light button_large">Посмотреть</button>
+                        </div>
+                    </div>
+                    <div class="preview__img">
+                        <img src="@img/background.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/footer.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

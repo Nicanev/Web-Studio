@@ -1,0 +1,124 @@
+@import "fonts";
+@import "stylenull";
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+body {
+  font-family: Montserrat;
+  background-color: #121319;
+  color: white;
+  font-size: 16px;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 500;
+  color: #696c80;
+}
+
+[class*="__container"] {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.button {
+  font-size: 18px;
+  padding: 8px 12px;
+  margin-left: 18px;
+  background-color: #004de5;
+  color: white;
+}
+
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    min-height: 110px;
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+  }
+
+  &__buttons {
+    a {
+      color: #696c80;
+    }
+  }
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-left: 20px;
+  }
+
+  &__link {
+    color: #696c80;
+  }
+}
+
+.preview {
+  &__container {
+    display: flex;
+  }
+
+  &__text {
+    margin-top: 113px;
+    h2 {
+      margin-top: 30px;
+    }
+  }
+
+  &__buttons {
+    margin-top: 20px;
+    button {
+      margin: 0;
+      margin-right: 20px;
+    }
+  }
+
+  &__img {
+  }
+}
+.button {
+  &_large {
+    padding: 12px 12px;
+    text-transform: uppercase;
+  }
+
+  &_light {
+    border: 1px solid #696c80;
+    color: #696c80;
+    background-color: #121319;
+  }
+  &_light::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background: url('@img/Bolt.svg') no-repeat center / contain;
+    }
+}
